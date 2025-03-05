@@ -1,0 +1,48 @@
+{
+  "architectures": [
+    "ChameleonForConditionalGeneration"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "boi_token_id": 8197,
+  "bos_token_id": 1,
+  "eoi_token_id": 8196,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "image_token_id": 8711,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "mlp_bias": false,
+  "model_parallel_size": 1,
+  "model_type": "chameleon",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 1,
+  "num_key_value_heads": 32,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "swin_norm": false,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.43.0.dev0",
+  "use_cache": true,
+  "vocab_size": 65536,
+  "vq_config": {
+    "attn_resolutions": [],
+    "ch": 128,
+    "ch_mult": [
+      1,
+      1,
+      2,
+      2,
+      4
+    ],
+    "double_z": false,
+    "model_type": "chameleon_vqgan",
+    "n_embed": 8192,
+    "out_ch": 3,
+    "z_channels": 256
+  }
+}
